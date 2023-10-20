@@ -10,10 +10,21 @@
     
 </head>
 <body>
-    <h1>learn python the hard way </h1>
-    <div>
-        <img src="{% static 'img/user.png'  %}" alt="user-profile">
+    
+    <header>
+        <div class="banner">
+            <img  src="{% static 'img/eas.png' %}" alt="eas">
+        </div>
+    </header>
+    <div class="profile">
+        <img class="profile-img" src="{% static 'img/user.png'  %}" alt="user-profile">
     </div>
+    <article>
+        {% for board in boards %}
+       <h2>{{board.name|title}}</h2>
+       <h3>{{board.description|title }}</h3>
+        {% endfor %}
+    </article>
     
 
 

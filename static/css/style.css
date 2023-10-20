@@ -7,16 +7,25 @@ body{
     background-color: turquoise;
     height: 200vh;
 }
-div {
-    border: 1px solid #00f;
+header{
     background-color: #fff;
-    width: 100px;
+    height: 200px;
+}
+header div img{
+    width: 200px;
+    object-fit: cover;
+}
+div.profile {
+    border: 2px solid lightblue;
+    background-color: #fff;
+    width: 130px;
     border-radius: 50%;
     margin-top: -50px;
 }
-img{
-    width: 100px;
+div.profile img.profile-img{
+    width: 130px;
     border-radius: 50%;
+    object-fit: cover;
     
 
 }
