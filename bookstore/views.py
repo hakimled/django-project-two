@@ -1,7 +1,12 @@
 from django.shortcuts import render
-
+from .models import Bookstore
 
 
 def bookstore(request):
+    books = Bookstore.objects.all().order_by('-added_on')
     
-    return render(request , 'bookstore/bookstore.html' , {})
+    
+    context = {'books': books}
+    
+    
+    return render(request , 'bookstore/bookstore.html' , context)

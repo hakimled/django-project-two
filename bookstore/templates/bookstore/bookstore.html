@@ -8,10 +8,28 @@
     <title>bookstore</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/bookstore.css'  %}">
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/media.css' %}">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>welcome to our bookstore</h1>
+    <div class="container">
+        {%  for book in books %}
+        <div class="zone">
+            <h2>{{book.title|title }}</h2>
+            <h4>{{book.description }}</h4>
+            <!-- <img src="{{book.picture.url }}" alt="{{book.title}}"> -->
+            <h4>by {{book.added_by|title}}</h4>
+
+
+        </div>
+
+        {% endfor %}
+        
+        
+
+    </div>
+    
+
     
 </body>
 </html>

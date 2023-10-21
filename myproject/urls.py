@@ -25,4 +25,10 @@ urlpatterns = [
     path('' , include('boards.urls')),
     path('news/', include('news.urls')),
     path('bookstore/' , include('bookstore.urls')),
-]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] 
+#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_URL)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

@@ -1,9 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
-    background-color: lightgreen;
+    background-color: #0F0F0F;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 30px;
+.container .zone{
+    height: 200px;
+    background-color: lightgreen;
+    border-radius: 15px;
 }
