@@ -13,11 +13,16 @@
     <section>
         <div class="left"></div>
         <div class="right">
-        <div>login</div>
-        <div>sign up</div>
-        <div class="profile">
-            <img class="profile-img" src="{% static 'img/user.png'  %}" alt="user-profile">
-        </div>
+       {% if user.is_authenticated %}
+       <div>{{user.username|title}}</div>
+       <div class="profile">
+        <img class="profile-img" src="{% static 'img/user.png'  %}" alt="user-profile">
+    </div>
+       {% else %}
+       <div>login</div>
+       <div>sign up</div>
+       {% endif %}
+       
         </div>
     </section>
     <header>
@@ -27,10 +32,10 @@
     </header>
     <nav>
         <div>
-            <a href="">accueil</a>
+            <a href="{% url 'news:news' %}">accueil</a>
         </div>
         <div>
-            <a href="">qui sommes nous </a>
+            <a href="{% url 'bookstore:bookstore' %}">qui sommes nous </a>
         </div>
         <div>
             nos formations
