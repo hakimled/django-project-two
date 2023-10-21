@@ -15,12 +15,32 @@ header div img{
     width: 200px;
     object-fit: cover;
 }
+nav{
+    background-color: #111;
+    color: #eee;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav div a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+nav div a:hover{
+    color: #ddd;
+    transition: color 1s ease;
+}
 div.profile {
     border: 2px solid lightblue;
     background-color: #fff;
     width: 130px;
     border-radius: 50%;
-    margin-top: -50px;
+    margin-top: 1px;
 }
 div.profile img.profile-img{
     width: 130px;
