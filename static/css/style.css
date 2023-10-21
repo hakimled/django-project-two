@@ -95,3 +95,20 @@ footer h3{
     color: #333;
     text-align: center;
 }
+
+
+/* media queries go here */
+
+@media screen and (max-width: 600px) {
+    section {
+      background-color: dodgerblue;
+    }
+    nav{
+        display:block;
+        font-size: 14px;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        height: 100px;
+    }
+  }
