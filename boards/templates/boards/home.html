@@ -10,7 +10,16 @@
     
 </head>
 <body>
-    
+    <section>
+        <div class="left"></div>
+        <div class="right">
+        <div>login</div>
+        <div>sign up</div>
+        <div class="profile">
+            <img class="profile-img" src="{% static 'img/user.png'  %}" alt="user-profile">
+        </div>
+        </div>
+    </section>
     <header>
         <div class="banner">
             <img  src="{% static 'img/eas.png' %}" alt="eas">
@@ -31,9 +40,7 @@
         </div>
         <div>certificats</div>
     </nav>
-    <div class="profile">
-        <img class="profile-img" src="{% static 'img/user.png'  %}" alt="user-profile">
-    </div>
+    
     <article>
         {% for board in boards %}
        <h2>{{board.name|title}}</h2>

@@ -8,6 +8,29 @@ body{
     height: 200vh;
     position: relative;
 }
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    top: 0;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 23px;
+    align-items: center;
+}
+section div.right{
+    display: flex ;
+    justify-content: space-around;
+    right: 0;
+    position: absolute;
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+}
 header{
     background-color: #fff;
     height: 200px;
@@ -39,14 +62,16 @@ nav div a:hover{
 div.profile {
     border: 2px solid lightblue;
     background-color: #fff;
-    width: 130px;
+    width: 45px;
+    height: auto;
     border-radius: 50%;
     margin-top: 1px;
 }
 div.profile img.profile-img{
-    width: 130px;
+    width: 40px;
     border-radius: 50%;
     object-fit: cover;
+    height: auto;
     
 
 }
