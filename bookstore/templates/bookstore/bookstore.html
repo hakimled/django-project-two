@@ -16,11 +16,9 @@
         {%  for book in books %}
         <div class="zone">
             <h2>{{book.title|title }}</h2>
-            <h4>{{book.description }}</h4>
-            <!-- <img src="{{book.picture.url }}" alt="{{book.title}}"> -->
+            <h4>{{book.description }}</h4>           
+           
             <h4>by {{book.added_by|title}}</h4>
-
-
         </div>
 
         {% endfor %}

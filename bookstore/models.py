@@ -27,7 +27,7 @@ class Bookstore(models.Model):
     price = models.DecimalField( max_digits=7,  decimal_places=2)
     added_by = models.ForeignKey(User, on_delete=models.CASCADE)
     added_on = models.DateTimeField(default=timezone.now)
-    picture = models.ImageField(upload_to=upload_location)
+    picture = models.ImageField(upload_to=upload_location ,null=True , blank=True)
     
     def __str__(self):
         return f'{self.author} added this book {self.title}'

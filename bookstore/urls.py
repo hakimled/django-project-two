@@ -5,4 +5,5 @@ app_name = 'bookstore'
 
 urlpatterns = [
     path('' , views.bookstore, name='bookstore'),
+    path('logout', views.logout_view , name='logout'),
 ]

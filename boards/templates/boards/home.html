@@ -43,7 +43,13 @@
         <div>
            <a href="tel:0699776376">contactez-nous</a>
         </div>
-        <div>certificats</div>
+        {% if  request.user.is_authenticated %}
+        <div> <a href="{% url 'bookstore:logout' %}">logout </a> </div>
+
+        {% else %}
+        <div> <a href="{% url 'bookstore:logout' %}">login </a> </div>
+
+        {% endif %}
     </nav>
     
     <article>

@@ -11,6 +11,43 @@
 </head>
 <body>
     <h1>welcoome to our news</h1>
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k?si=0Km8h9myb7BOvdjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div style="font-size: 20px;">
+        <pre>
+            <code>
+                let name = 'hakim';
+                let age = 34;
+                console.log(`Your name is ${name} and you are ${age});
+            </code>
+        </pre>
+        <pre>
+            <code>
+                def name():
+                    if name == 'hakim':
+                        return True
+                    else:
+                        return False
+    
+            </code>
+        </pre>
+    </div>
+
+    <section class="register">
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="username">
+            <br>
+            <input type="text" name="email" placeholder="email">
+            <br>
+            <input type="password" name="password" placeholder="password">
+            <br>
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
 
 
 
@@ -19,4 +56,4 @@
     <script src="{% static 'js/news.css' %}"></script>
     
 </body>
-</html>
+</html> 
